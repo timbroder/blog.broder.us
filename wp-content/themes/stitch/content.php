@@ -25,12 +25,12 @@
 	<footer class="entry-meta">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php stitch_posted_on(); ?>
-			<span class="sep"></span>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
 				$categories_list = get_the_category_list( __( ', ', 'stitch' ) );
 				if ( $categories_list && stitch_categorized_blog() ) :
 			?>
+			<span class="sep"></span>
 			<span class="cat-links">
 				<?php printf( __( 'Posted in %1$s', 'stitch' ), $categories_list ); ?>
 			</span>

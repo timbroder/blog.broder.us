@@ -718,7 +718,7 @@ a:active {
 	text-transform: uppercase;
 }
 .byline {
-	display: none;
+	/* display: none; */
 }
 .single .byline,
 .group-blog .byline {

@@ -101,7 +101,7 @@ select,
 textarea {
 	color: #3d200e;
 	font-family: "Rufina", Baskerville, "Times New Roman", serif;
-	font-size: 16px;
+	font-size: 12px;
 	font-size: 1.6rem;
 	line-height: 1.8;
 }
@@ -510,6 +510,8 @@ a:active {
 	vertical-align: middle;
 	max-width: 170px;
 	max-height: 170px;
+	font-size: 150px;
+	font-family: 'Norican', cursive;
 }
 .site-description {
 	color: #f7f6f2;

@@ -7,12 +7,12 @@ jQuery( document ).ready( function( $ ) {
 
 	$.fn.smallMenu = function() {
 		$masthead.find( '.site-navigation' ).removeClass( 'main-navigation' ).addClass( 'main-small-navigation' );
-		$masthead.find( '.site-navigation h1' ).removeClass( 'assistive-text' ).addClass( 'menu-toggle' );
+		$masthead.find( '.site-navigation h1' ).removeClass( 'assistive-text' );//.addClass( 'menu-toggle' );
 
-		$( '.menu-toggle' ).unbind( 'click' ).click( function() {
-			$masthead.find( '.menu' ).toggle();
-			$( this ).toggleClass( 'toggled-on' );
-		} );
+		//$( '.menu-toggle' ).unbind( 'click' ).click( function() {
+		//	$masthead.find( '.menu' ).toggle();
+		//	$( this ).toggleClass( 'toggled-on' );
+		//} );
 	};
 
 	// Check viewport width on first load.
@@ -31,7 +31,8 @@ jQuery( document ).ready( function( $ ) {
 				$.fn.smallMenu();
 			} else {
 				$masthead.find( '.site-navigation' ).removeClass( 'main-small-navigation' ).addClass( 'main-navigation' );
-				$masthead.find( '.site-navigation h1' ).removeClass( 'menu-toggle' ).addClass( 'assistive-text' );
+				//$masthead.find( '.site-navigation h1' ).removeClass( 'menu-toggle' ).addClass( 'assistive-text' );
+				$masthead.find( '.site-navigation h1' ).addClass( 'assistive-text' );
 				$masthead.find( '.menu' ).removeAttr( 'style' );
 			}
 		}, 200 );

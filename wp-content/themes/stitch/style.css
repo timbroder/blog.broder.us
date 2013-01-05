@@ -628,7 +628,7 @@ a:active {
 }
 .main-small-navigation .menu {
 	border-bottom: 1px dashed rgba(255,255,255,.2);
-	display: none;
+	/* display: none; */
 	list-style: none;
 	margin: 0 auto;
 	padding: 0;
